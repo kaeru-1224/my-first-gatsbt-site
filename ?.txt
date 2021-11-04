@@ -1,0 +1,42 @@
+Environment variables ???(겟츠비 사이트 셋업시)
+
+! 갯츠비 사이트내의 강의 
+리액트:ui를 만들어 주는데 도움이되고 동시에, ui를 컴포넌트라는 작은 조각으로 만들어서 이용하는 방식으로 이용하면  
+용이함 
+1) 컴포넌트
+-페이지 : 페이지 전체의 모든 내용을 의미
+-빌딩블록: 
+2) 리액트 컴포넌트를 만들기위한 세가지스탭 
+1)import react
+2)함수를 작성해주고 
+3)  export해줍니다!
+
+3) 에러 
+-Adjacent JSX elements must be wrapped in an enclosing tag. Did you want a JSX fragment
+const Homepage = () => {
+  return <h1> hello!</h1>
+          <p>this is first page</p>;
+};
+이대로 작성하는 경우 발생하는 에러로, 하나의 엘리먼트만 리턴해줄 수있으므로, 감싸는 작업을 해줘야함
+const Homepage = () => {
+  return (
+    <div>
+      <h1> hello!</h1>
+      <p>this is first page</p>
+    </div>
+  );
+};
+그런데 이렇게 작성을했을때  div가 연속적으로 작성되어 보기 어려울경우에는  fragment를 이용해주면되는데 
+const Homepage = () => {
+  return (
+    <>
+      <h1> hello!</h1>
+      <p>this is first page</p>
+    </>
+  );
+};
+이대로 진행해주면되는것
+
+2) 리액트에서는 디폴트 export만 가능 왜??
+
+3) 어케 라우팅이되지???
