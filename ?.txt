@@ -56,4 +56,21 @@ const Homepage = () => {
 
 7) 레이아웃을 사용해줄때 바로 return 파일명 이여야할것같았는데 알고보니 return<></>식으로 작성이되어야했음
 
-8)  html을 리턴해줄때 큰 부모 컴포넌트는 그대로 남아있고 내부만 바뀌는st!
+8)  html을 리턴해줄때 큰 부모 컴포넌트는 그대로 남아있고 내부만 바뀌는st! 
+
+
+-plugin
+사진을 넣어주기위해 겟츠비 사진 플러그인을 이용
+->npm으로 설치후  config해주어함
+1)gatsby-plugin-image
+(?? 다시 들어야할듯)
+--> 계속해서 사용되는이미지,겟츠비이미지()
+
+2)플러그인 설치후 에러 발생
+This is probably not a problem with npm. There is likely additional logging output above.
+계속 이런에러가 나와서 모듈 전체 지우고 깔아도 에러나서결국
+깐 파일이 문제일것같아서 플러그인 지워주고  config 수정하니까해결되었음 
+
+3)레이아웃 문제로 사진이 보이지 않는 문제가 발생햇따!
+==> 정확히는 레이웃 안에 컴포넌트를 넣어도 보이지 않는 문제가 발생홤 
+
