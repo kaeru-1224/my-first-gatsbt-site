@@ -4,7 +4,7 @@ import Layout from "../components/layout";
 const ContactPage = () => {
   return (
     <Layout PageTitle="Contact" PageHeading="Contact us">
-      {" "}
+      <p>this is contact</p>
     </Layout>
   );
 };

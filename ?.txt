@@ -74,3 +74,22 @@ This is probably not a problem with npm. There is likely additional logging outp
 3)레이아웃 문제로 사진이 보이지 않는 문제가 발생햇따!
 ==> 정확히는 레이웃 안에 컴포넌트를 넣어도 보이지 않는 문제가 발생홤 
 
+4) 레이아웃  props (추가공부 필)
+const Layout = ({ PageTitle, PageHeading })
+이런식으로 객체로 사용가능
+-children
+태그내에 있는 것들은 자식 요소로 분류된다?
+->  자식요소는 마음대로 교체가 가능하지만, 
+부모요소(큰틀이되는거 레이아웃이되는거)는 유지되는 모습을 지님 , children이라는 객체를 추가해주어야지 사용이 
+가능한거엿어~~!!!!
+
+{" "}//이건왜생기는거지?
+
+5)css를 이용해보기 
+-파일 생성: layout.module.css 
+.클래스명 { css 작성}
+=> import{클래스명 } from"파일명"으로 작성해 사용해준다
+콘솔로그하면 이렇게 나오게됨
+container :layout-module--container--YM7Lx
+이후로 기존에  html에서 클래스명 이용하듯이 이용해주면 되는 것 같음 !, 
+각 클래스를 import해주어야함 
