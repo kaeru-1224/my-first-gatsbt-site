@@ -10,4 +10,6 @@ const Blog = () => {
   );
 };
 
+//블로그 포스트 만들기로이동
+
 export default Blog;
