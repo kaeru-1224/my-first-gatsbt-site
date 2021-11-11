@@ -3,7 +3,11 @@
   max-width: 500px;
   font-family: sans-serif;
 }
-
+.logoSize {
+  margin: 30px;
+  display: flex;
+  align-self: center;
+}
 .heading {
   color: rebeccapurple;
 }
@@ -14,7 +18,15 @@
 }
 .nav-link-item {
   padding-right: 2rem;
+  align-self: center;
 }
 .nav-link-text {
   color: black;
+}
+
+.site-title {
+  font-size: 3rem;
+  color: gray;
+  font-weight: 700;
+  margin: 3rem 0;
 }

@@ -1,19 +1,44 @@
 import * as React from "react";
-import { Link } from "gatsby";
+import { Link, useStaticQuery, graphql } from "gatsby";
+import { StaticImage } from "gatsby-plugin-image";
+
 import {
   container,
   heading,
   navLinks,
   navLinkItem,
   navLinkText,
+  logoSize,
+  siteTitle,
 } from "./layout.module.css";
 
 const Layout = ({ PageTitle, PageHeading, children }) => {
+  const data = useStaticQuery(graphql`
+    query {
+      site {
+        siteMetadata {
+          title
+        }
+      }
+    }
+  `);
   return (
     <main className={container}>
-      <title>{PageTitle}</title>
+      <title>
+        {PageTitle}| {data.site.siteMetadata.title}
+      </title>
       <nav>
+        <header className={siteTitle}>{data.site.siteMetadata.title}</header>
         <ul className={navLinks}>
+          <Link to="/">
+            <StaticImage
+              className={logoSize}
+              width={50}
+              height={50}
+              ral="logo"
+              src="/home/didi/바탕화면/GatTry/my-first-gatsbt-site/src/images/icon.png"
+            />
+          </Link>
           <li className={navLinkItem}>
             <Link to="/" className={navLinkText}>
               HOME{" "}
@@ -31,6 +56,7 @@ const Layout = ({ PageTitle, PageHeading, children }) => {
           </li>
         </ul>
       </nav>
+
       <h1 className={heading}>{PageHeading}</h1>
       {children}
     </main>
