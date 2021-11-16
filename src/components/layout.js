@@ -35,7 +35,6 @@ const Layout = ({ PageTitle, PageHeading, children }) => {
               className={logoSize}
               width={50}
               height={50}
-              ral="logo"
               src="/home/didi/바탕화면/GatTry/my-first-gatsbt-site/src/images/icon.png"
             />
           </Link>

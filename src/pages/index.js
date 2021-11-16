@@ -8,10 +8,7 @@ const HomepageMain = () => {
     <>
       <Layout PageTitle="Home" PageHeading="Welcome to my Gatsby site!">
         <p>I'm making this by following Gatsby Tutorial. </p>
-        <StaticImage
-          alt="kerropi"
-          src="/home/didi/바탕화면/GatTry/my-first-gatsbt-site/src/images/original.jpeg"
-        />
+        <StaticImage src="/home/didi/바탕화면/GatTry/my-first-gatsbt-site/src/images/original.jpeg" />
       </Layout>
     </>
   );
