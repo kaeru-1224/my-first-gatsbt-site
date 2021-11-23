@@ -11,7 +11,7 @@ const BlogPost = ({ data }) => {
     </Layout>
   );
 };
-
+console.log(BlogPost);
 export const query = graphql`
   query ($id: String) {
     mdx(id: { eq: $id }) {
