@@ -10,6 +10,14 @@ const BlogPost = ({ data }) => {
     <Layout pageTitle={data.mdx.frontmatter.title}>
       <p>{data.mdx.frontmatter.date}</p>
       <GatsbyImage image={image} alt={data.mdx.frontmatter.frog_image_alt} />
+
+      <p>
+        Credit:{" "}
+        <a href={data.mdx.frontmatter.frog_image_credit_link} target="_blank">
+          {data.mdx.frontmatter.frog_image_credit_text}{" "}
+        </a>
+      </p>
+
       <MDXRenderer>{data.mdx.body}</MDXRenderer>
     </Layout>
   );
